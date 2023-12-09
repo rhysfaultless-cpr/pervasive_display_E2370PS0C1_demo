@@ -1,6 +1,6 @@
 # pervasive_display_E2370PS0C1_demo
 
-<center><img src="/readme_assets/pervasive_displays_370_1.png" width="600"/></center>
+<section align="center"><img src="/readme_assets/pervasive_displays_370_1.png" width="600"/></section>
 
 ## components
 
