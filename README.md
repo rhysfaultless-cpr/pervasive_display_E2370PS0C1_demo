@@ -7,6 +7,9 @@
 - Display: [E2370PS0C1](https://www.pervasivedisplays.com/product/3-70-e-ink-displays/)
 - Development board: [EXT3-1](https://www.pervasivedisplays.com/product/epd-extension-kit-gen-3-ext3/)
 - Raspberry Pi Pico
+- Jumper wires
+- USB cable
+- Development computer ( Windows, MacOS, or Linux )
 
 ## links
 
@@ -32,3 +35,22 @@
     - 8 black pixels as (0x00)
     - 8 white pixels as (0xff)
 5.  We need to use  1-bit grayscale color / monochrome images.
+
+## files of interest, for making updates
+
+- `examples/Demo/Demo.ino` is the main file that Arduino IDE will use to build the project.
+- `examples/Demo/fastupdate_src/fp_data/370/images370.c` is a file where I have stored custom bitmaps.
+  These could be separated into individual `.c` files per image.
+  I combined all the Clearpath custom images into a single `.c` file for simplicity of showing how Pervasive Displays' Arduino library functions.
+- `examples/Demo/fastupdate_src/fp_data/370/FuPu_Data.h` is used for importing the bitmap data from `.c` files, and defining constants with this data.
+
+## setup
+
+1.  Get the components listed in this README, and connect them per the [Wiring Guide](https://docs.pervasivedisplays.com/epd-usage/development-kits/ext3-1/wiring-to-raspberry-pico).
+2.  Install Arduino IDE on your development computer.
+3.  Download this repository as a `.zip`.
+4.  In the Arduino IDE application, install a ZIP library, selecting the `.zip` of this repository.
+5.  In the Arduino IDE, open the example project `File → Examples → EPD_Driver → Demo`.
+6.  Once loaded in the Arduino IDE, select the Board as a `Raspberry Pi Pico`, and select the Port that the microcontroller is connected to.
+7.  Select the Upload button.
+    Arduino IDE should build the broject, and flash the Raspberry Pi Pico.
