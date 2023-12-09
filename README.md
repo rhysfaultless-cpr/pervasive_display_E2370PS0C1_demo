@@ -1,6 +1,6 @@
 # pervasive_display_E2370PS0C1_demo
 
-<img src="/readme_assets/pervasive_displays_370_1.png" width="800"/>
+<section align="center"><img src="/readme_assets/pervasive_displays_370_1.png" width="400"/></section>
 
 ## components
 
@@ -43,6 +43,32 @@
   These could be separated into individual `.c` files per image.
   I combined all the Clearpath custom images into a single `.c` file for simplicity of showing how Pervasive Displays' Arduino library functions.
 - `examples/Demo/fastupdate_src/fp_data/370/FuPu_Data.h` is used for importing the bitmap data from `.c` files, and defining constants with this data.
+
+## creating a new bitmap image
+
+Note that this all assumes that the physical display is in a horizontal orientation.
+
+1.  Create a black and white `.png` image that is 416 pixels wide by 240 tall.
+2.  Open Pervasive Displays PDI Apps V1.30.
+    The `Pervasive Displays PDI Apps V1.30` installer was [available here](https://www.pervasivedisplays.com/private-doc/pdi-apps-v1-30-installer/) in December 2023. 
+    I tested this on Windows 10.
+    I do not know if it is available for other operating systems.
+
+    <section align="center"><img src="/readme_assets/pervasive_displays_pdi_apps.png" width="600"/></section>
+
+3.  Once the application is open, switch to the `Bitmap` tab.
+4.  Select `File`, and navigate to the `png` created in Step 1.
+5.  Select `Custom` image size, and set the fields to 240 Width, and 416 Height.
+    This seems backwards, but it is deliberate due to the display's indexing direction being designed for a vertical orientation.
+
+    <a href='https://www.pervasivedisplays.com/wp-content/uploads/2022/09/ApplicationNote_smallSize_fast-update_v02_20220907.pdf'><section align="center"><img src="/readme_assets/pervasive_displays_370_2.png" width="160"/></section></a>
+
+6.  Select `Rotate - 180`.
+7.  Select `Convert`.
+8.  Copy all the text from the `Output Image Raw Data` field.
+9.  Paste that text into a new object in the file `examples/Demo/fastupdate_src/fp_data/370/images370.c`.
+    You will also need to define a new constant in `examples/Demo/fastupdate_src/fp_data/370/FuPu_Data.h`.
+    After that, you can use the new constant / image in `examples/Demo/Demo.ino`.
 
 ## setup
 
