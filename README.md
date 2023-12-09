@@ -54,14 +54,14 @@ Note that this all assumes that the physical display is in a horizontal orientat
     I tested this on Windows 10.
     I do not know if it is available for other operating systems.
 
-    <center><img src="/readme_assets/pervasive_displays_pdi_apps.png" width="600"/></center>
+    <section align="center"><img src="/readme_assets/pervasive_displays_pdi_apps.png" width="600"/></section>
 
 3.  Once the application is open, switch to the `Bitmap` tab.
 4.  Select `File`, and navigate to the `png` created in Step 1.
 5.  Select `Custom` image size, and set the fields to 240 Width, and 416 Height.
     This seems backwards, but it is deliberate due to the display's indexing direction being designed for a vertical orientation.
 
-    <center><a href='https://www.pervasivedisplays.com/wp-content/uploads/2022/09/ApplicationNote_smallSize_fast-update_v02_20220907.pdf'><img src="/readme_assets/pervasive_displays_370_2.png" width="200"/></a></center>
+    <a href='https://www.pervasivedisplays.com/wp-content/uploads/2022/09/ApplicationNote_smallSize_fast-update_v02_20220907.pdf'><section align="center"><img src="/readme_assets/pervasive_displays_370_2.png" width="160"/></section></a>
 
 6.  Select `Rotate - 180`.
 7.  Select `Convert`.
