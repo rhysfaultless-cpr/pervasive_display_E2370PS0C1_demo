@@ -53,7 +53,9 @@ void loop()
 	delay(2000);
 	epdtest.fastUpdate(FastPic_w, img_hmi_5);
   delay(10000);
-  epdtest.fastUpdate(img_hmi_5, img_hmi_3);
+  epdtest.fastUpdate(img_hmi_5, img_hmi_1_flipped);
+  delay(2000);
+  epdtest.fastUpdate(img_hmi_1_flipped, img_hmi_3);
   delay(2000);
   epdtest.fastUpdate(img_hmi_3, img_hmi_2);
   delay(2000);
