@@ -15,8 +15,8 @@
 // DEMO Image Set <Comment out when in User Mode>
 // Screen Size: 154, 206, 213, 266, 271, 287, 292, 370, 417, 437
 #define SCREEN 370
-#include "globalDemoImageData.h"
-#include "fastDemoImageData.h"
+#include "./globalupdate_src/globalDemoImageData.h"
+#include "./fastupdate_src/fastDemoImageData.h"
 //------------------------------------------------------------
 
 #define EPD_SIZE eScreen_EPD_370
@@ -51,17 +51,17 @@ void setup()
 void loop()
 {
 	delay(2000);
-	epdtest.fastUpdate(FastPic_w, img_hmi_5);
+	epdtest.fastUpdate(FastPic_w, img_hmi_5_flipped);
   delay(10000);
-  epdtest.fastUpdate(img_hmi_5, img_hmi_3);
+  epdtest.fastUpdate(img_hmi_5_flipped, img_hmi_3_flipped);
   delay(2000);
-  epdtest.fastUpdate(img_hmi_3, img_hmi_2);
+  epdtest.fastUpdate(img_hmi_3_flipped, img_hmi_2_flipped);
   delay(2000);
-  epdtest.fastUpdate(img_hmi_2, img_hmi_1);
+  epdtest.fastUpdate(img_hmi_2_flipped, img_hmi_1_flipped);
   delay(2000);
-  epdtest.fastUpdate(img_hmi_1, img_hmi_4);
+  epdtest.fastUpdate(img_hmi_1_flipped, img_hmi_4_flipped);
   delay(10000);
-  epdtest.fastUpdate(img_hmi_4, FastPic_b);
+  epdtest.fastUpdate(img_hmi_4_flipped, FastPic_b);
   delay(2000);
 	epdtest.fastUpdate(FastPic_b, FastPic_w);
 }

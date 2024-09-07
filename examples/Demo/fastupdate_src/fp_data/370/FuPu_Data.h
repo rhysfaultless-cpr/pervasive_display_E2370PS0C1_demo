@@ -4,12 +4,12 @@
 */
 
 // 3.70"
-#include "370_1.c"
-#include "370_2.c"
-#include "370_3.c"
-#include "370_4.c"
-#include "370_black.c"
-#include "images370.c"
+#include "./370_1.c"
+#include "./370_2.c"
+#include "./370_3.c"
+#include "./370_4.c"
+#include "./370_black.c"
+#include "./images370.c"
 
 
 #define FastPic_1        (uint8_t *) & image_370_416x240_BW_mono
@@ -31,3 +31,9 @@
 #define img_hmi_3                    (uint8_t *) & global_img_hmi_3
 #define img_hmi_4                    (uint8_t *) & global_img_hmi_4
 #define img_hmi_5                    (uint8_t *) & global_img_hmi_5
+
+#define img_hmi_1_flipped            (uint8_t *) & global_img_hmi_1_flipped
+#define img_hmi_2_flipped            (uint8_t *) & global_img_hmi_2_flipped
+#define img_hmi_3_flipped            (uint8_t *) & global_img_hmi_3_flipped
+#define img_hmi_4_flipped            (uint8_t *) & global_img_hmi_4_flipped
+#define img_hmi_5_flipped            (uint8_t *) & global_img_hmi_5_flipped
