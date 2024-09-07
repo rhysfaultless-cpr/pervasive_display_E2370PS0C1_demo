@@ -4,12 +4,12 @@
 */
 
 // 3.70"
-#include "370_1.c"
-#include "370_2.c"
-#include "370_3.c"
-#include "370_4.c"
-#include "370_black.c"
-#include "images370.c"
+#include "./370_1.c"
+#include "./370_2.c"
+#include "./370_3.c"
+#include "./370_4.c"
+#include "./370_black.c"
+#include "./images370.c"
 
 
 #define FastPic_1        (uint8_t *) & image_370_416x240_BW_mono

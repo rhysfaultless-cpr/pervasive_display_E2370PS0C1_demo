@@ -4,4 +4,4 @@
 */
 
 // Load Global Update Images
-#include "FuPu_Data.h"
+#include "./fp_data/370/FuPu_Data.h"

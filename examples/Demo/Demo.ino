@@ -15,8 +15,8 @@
 // DEMO Image Set <Comment out when in User Mode>
 // Screen Size: 154, 206, 213, 266, 271, 287, 292, 370, 417, 437
 #define SCREEN 370
-#include "globalDemoImageData.h"
-#include "fastDemoImageData.h"
+#include "./globalupdate_src/globalDemoImageData.h"
+#include "./fastupdate_src/fastDemoImageData.h"
 //------------------------------------------------------------
 
 #define EPD_SIZE eScreen_EPD_370
