@@ -51,19 +51,17 @@ void setup()
 void loop()
 {
 	delay(2000);
-	epdtest.fastUpdate(FastPic_w, img_hmi_5);
+	epdtest.fastUpdate(FastPic_w, img_hmi_5_flipped);
   delay(10000);
-  epdtest.fastUpdate(img_hmi_5, img_hmi_1_flipped);
+  epdtest.fastUpdate(img_hmi_5_flipped, img_hmi_3_flipped);
   delay(2000);
-  epdtest.fastUpdate(img_hmi_1_flipped, img_hmi_3);
+  epdtest.fastUpdate(img_hmi_3_flipped, img_hmi_2_flipped);
   delay(2000);
-  epdtest.fastUpdate(img_hmi_3, img_hmi_2);
+  epdtest.fastUpdate(img_hmi_2_flipped, img_hmi_1_flipped);
   delay(2000);
-  epdtest.fastUpdate(img_hmi_2, img_hmi_1);
-  delay(2000);
-  epdtest.fastUpdate(img_hmi_1, img_hmi_4);
+  epdtest.fastUpdate(img_hmi_1_flipped, img_hmi_4_flipped);
   delay(10000);
-  epdtest.fastUpdate(img_hmi_4, FastPic_b);
+  epdtest.fastUpdate(img_hmi_4_flipped, FastPic_b);
   delay(2000);
 	epdtest.fastUpdate(FastPic_b, FastPic_w);
 }

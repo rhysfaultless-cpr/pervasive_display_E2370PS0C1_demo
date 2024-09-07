@@ -33,3 +33,7 @@
 #define img_hmi_5                    (uint8_t *) & global_img_hmi_5
 
 #define img_hmi_1_flipped            (uint8_t *) & global_img_hmi_1_flipped
+#define img_hmi_2_flipped            (uint8_t *) & global_img_hmi_2_flipped
+#define img_hmi_3_flipped            (uint8_t *) & global_img_hmi_3_flipped
+#define img_hmi_4_flipped            (uint8_t *) & global_img_hmi_4_flipped
+#define img_hmi_5_flipped            (uint8_t *) & global_img_hmi_5_flipped
